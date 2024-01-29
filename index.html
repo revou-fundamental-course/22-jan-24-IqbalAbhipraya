@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Groceries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <ul class="burger-list">
+            <li onclick="hideHamburgerMenu()"><a><img src="assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Close"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-package">Our Package</a></a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><img src="assets/logo.svg" height="80px" alt="profile picture"></li>
+            <li class="hide-nav"><a href="#home">Home</a></li>
+            <li class="hide-nav"><a href="#our-package">Our Package</a></a></li>
+            <li class="hide-nav"><a href="#contact-us">Contact Us</a></li>
+            <li onclick="showHamburgerMenu()" class="hide-hamburg"><a><img src="assets/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Sidebar"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header-container">
+        <h1>Top Rated E&#8209;Groceries Shop in Indonesia</h1>
+        <h5>Fresh Ingredients Every Day</h5>
+    </header>
+
+    <section class="main-container">
+        <div class="left-main-content">
+            <img src="assets/main-image.jpg" alt="this is the picture">
+            <div class="customer-comment">
+                <p><i>"Setiap hari beli sayur dan buah segar disini"</i></p>
+                
+                <div class="commenter-profile">
+                    <div class="commenter-profilepic"></div>
+                    <div>
+                        <p style="color: black;"><b>Fulan</b></p>
+                        <p><i>Ibu rumah tangga, 34</i></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="headline-benefit">
+                <h4><b>Our product is supperior than the other competitors such as that our product is:</b></h4>
+                <ol>
+                    <li><b>Higher quality:</b> We produce our product with care</li>
+                    <li><b>Fresh everyday:</b> We deliver our product in the morning fresh from the source</li>
+                    <li><b>Trusted:</b> Our services is trusted by many people in Indonesia</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="right-main-content">
+            <form class="contact-us-form" action="" method="post">
+                <h4>Contact Us</h4>
+                <p>Sales person will contact you 1x24 hours after the data is received</p>
+                <div class="form-content">
+                    <label for="name-field">Your Name:</label>
+                    <input type="text" id="name-field" placeholder="First and last name">
+                    <br>
+
+                    <label for="email-field">Email Address:</label>
+                    <input type="email" id="email-field" placeholder="example@email.com">
+                    <br>
+
+                    <label for="interest-field">What are you interested in?</label>
+                    <select id="interest-field">
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="knowmore">Know More</option>
+                        <option value="business">Business Partner</option>
+                        <option value="cs">Customer Service</option>
+                    </select>
+                    <br>
+
+                    <input type="submit" value="SEND">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="our-package-container" id="our-package">
+        <div class="our-package-header">
+            <h3>Our Package</h3>
+        </div>
+        <div class="our-package">
+            <div class="packages-content">
+                <div class="bullet-point">
+                    <div>
+                        <img src="assets/lightbulb_FILL0_wght400_GRAD0_opsz24.svg" alt="bullet point">
+                    </div>
+                </div>
+                <div class="bullet-point-description">
+                    <h6>Fresh Vegetable</h6>
+                    <p>Sayuran segar kangsung dari sumber pertanian terbaik</p>
+                </div>
+            </div>
+            <div class="packages-content">
+                <div class="bullet-point">
+                    <div>
+                        <img src="assets/lightbulb_FILL0_wght400_GRAD0_opsz24.svg" alt="bullet point">
+                    </div>
+                </div>
+                <div class="bullet-point-description">
+                    <h6>Fresh Fruit</h6>
+                    <p>Buah dengan kualitas terbaik dari lokal atau import dengan harga yang menarik</p>
+                </div>
+            </div>
+            <div class="packages-content">
+                <div class="bullet-point">
+                    <div>
+                        <img src="assets/lightbulb_FILL0_wght400_GRAD0_opsz24.svg" alt="bullet point">
+                    </div>
+                </div>
+                <div class="bullet-point-description">
+                    <h6>Instant Delivery</h6>
+                    <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                </div>
+            </div>
+        </div>
+        <div class="seperator-container"><div class="seperator"></div></div>
+        <div class="our-package">
+            <div class="packages-content">
+                <div class="bullet-point">
+                    <div>
+                        <img src="assets/star_FILL0_wght400_GRAD0_opsz24.svg" alt="bullet point">
+                    </div>
+                </div>
+                <div class="bullet-point-description" alt="bullet point">
+                    <h6>Kitchen Ingredient</h6>
+                    <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                </div>
+            </div>
+            <div class="packages-content">
+                <div class="bullet-point">
+                    <div>
+                        <img src="assets/star_FILL0_wght400_GRAD0_opsz24.svg" alt="bullet point">
+                    </div>
+                </div>
+                <div class="bullet-point-description">
+                    <h6>Kitchen Set</h6>
+                    <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+                </div>
+            </div>
+            <div class="packages-content">
+                <div class="bullet-point">
+                    <div>
+                        <img src="assets/star_FILL0_wght400_GRAD0_opsz24.svg" alt="bullet point">
+                    </div>
+                </div>
+                <div class="bullet-point-description">
+                    <h6>Bunding Set</h6>
+                    <p>Bingung masak apa? sudah tersedia paket untuk kamu memasak di dapur mu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Your Closing Argument Headline</h2>
+        <p>In quis dolor id dolor imperdiet eleifend a eu purus. Vivamus facilisis enim quis justo pellentesque tincidunt. Fusce non volutpat erat. Cras vulputate rutrum neque, ac gravida tellus sagittis at. Ut maximus tempor leo et auctor. Integer quis mauris quis massa dictum varius sed ut urna. Morbi pharetra non sem ac mattis.</p>
+        <br>
+        <button class="cta-button" id="cta">CALL TO ACTION</button>
+    </section>
+
+    <footer class="footer-container">
+        <div><i>Abhipraya.inc</i></div>
+        <br>
+        <div>&copy;2024</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
