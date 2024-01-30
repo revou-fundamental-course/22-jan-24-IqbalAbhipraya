@@ -12,26 +12,39 @@
     <nav class="navigation-bar">
         <ul class="burger-list">
             <li onclick="hideHamburgerMenu()"><a><img src="assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Close"></a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#our-package">Our Package</a></a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#banner" onclick="hideHamburgerMenu()">Home</a></li>
+            <li><a href="#our-package" onclick="hideHamburgerMenu()">Our Package</a></a></li>
+            <li><a href="#contact-us" onclick="hideHamburgerMenu()">Contact Us</a></li>
         </ul>
         <ul>
             <li><img src="assets/logo.png" height="80px" alt="profile picture"></li>
-            <li class="hide-nav"><a href="#home">Home</a></li>
-            <li class="hide-nav"><a href="#our-package">Our Package</a></a></li>
+            <li class="hide-nav"><a href="#banner" >Home</a></li>
+            <li class="hide-nav"><a href="#our-package" >Our Package</a></a></li>
             <li class="hide-nav"><a href="#contact-us">Contact Us</a></li>
             <li onclick="showHamburgerMenu()" class="hide-hamburg"><a><img src="assets/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Sidebar"></a>
             </li>
         </ul>
     </nav>
 
-    <header class="header-container">
+    <section class="banner-container" id="banner">
+        <h1>E-Groceries offer</h1>
+        <div class="banner-img-section">
+            <button onclick="plusDivs(-1)" class="change-img-button">&lt;</button>
+            <img class="img-slideshow" src="assets/image-1.jpg">
+            <img class="img-slideshow" src="assets/image-2.jpg">
+            <img class="img-slideshow" src="assets/main-image.jpg">
+            <button onclick="plusDivs(1)" class="change-img-button">&gt;</button>
+        </div>
+        
+        <a href="#header"><button>GET STARTED</button></a>
+    </section>
+
+    <header class="header-container" id="header">
         <h1>Top Rated E&#8209;Groceries Shop in Indonesia</h1>
         <h3>Every Day with best Ingredient</h3>
     </header>
 
-    <section class="main-container">
+    <section class="main-container" id="main-container">
         <div class="left-main-content">
             <img src="assets/main-image.jpg" alt="this is the picture">
             <div class="customer-comment">
@@ -40,8 +53,8 @@
                 <div class="commenter-profile">
                     <div class="commenter-profilepic"></div>
                     <div>
-                        <p><b>Fulan</b></p>
-                        <p><i>Ibu rumah tangga, 34</i></p>
+                        <p><b>Seseorang</b></p>
+                        <p><i>Ibu rumah tangga, 32</i></p>
                     </div>
                 </div>
             </div>
@@ -57,28 +70,31 @@
         </div>
 
         <div class="right-main-content">
-            <form class="contact-us-form" action="" method="post">
+            <form name="contact-us-form" class="contact-us-form" onsubmit="return validateForm()">
                 <h4>Contact Us</h4>
                 <p>Sales person will contact you 1x24 hours after the data is received</p>
                 <div class="form-content">
                     <label for="name-field">Your Name:</label>
-                    <input type="text" id="name-field" placeholder="First and last name" required>
+                    <input type="text" name="name-field" id="name-field" placeholder="First and last name" >
+                    <p id="error-name"></p>
                     <br>
 
                     <label for="email-field">Email Address:</label>
-                    <input type="email" id="email-field" placeholder="example@email.com" required>
+                    <input type="email" name="email-field" id="email-field" placeholder="example@email.com" >
+                    <p id="error-email"></p>
                     <br>
 
                     <label for="interest-field">What are you interested in?</label>
-                    <select id="interest-field" required>
-                        <option value="" disabled selected>Select Option</option>
+                    <select id="interest-field"  name="interest-field">
+                        <option value="default" disabled="true" selected>Select Option</option>
                         <option value="knowmore">Know More</option>
                         <option value="business">Business Partner</option>
                         <option value="needhelp">Need Help</option>
                     </select>
+                    <p id="error-interest"></p>
                     <br>
 
-                    <input type="submit" value="SEND">
+                    <button type="submit">SEND</button>
                 </div>
             </form>
         </div>
@@ -161,7 +177,7 @@
         </div>
     </section>
 
-    <section class="call-to-action">
+    <section class="call-to-action" id="contact-us">
         <h2>Your Closing Argument Headline</h2>
         <p>In quis dolor id dolor imperdiet eleifend a eu purus. Vivamus facilisis enim quis justo pellentesque tincidunt. Fusce non volutpat erat. Cras vulputate rutrum neque, ac gravida tellus sagittis at. Ut maximus tempor leo et auctor. Integer quis mauris quis massa dictum varius sed ut urna. Morbi pharetra non sem ac mattis.</p>
         <br>
