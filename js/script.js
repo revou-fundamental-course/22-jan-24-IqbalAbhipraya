@@ -29,16 +29,14 @@ function validateForm(){
         document.getElementById('error-email').innerHTML = "";
         document.getElementById('email-field').style.borderColor = 'black';
         emailCheck = true;
-
     }
 
-    if (interest == 'default'){
+    if (!interest){
         document.getElementById('error-interest').innerHTML = "Please pick one of the option";
         document.getElementById('interest-field').style.borderColor = 'red';
     }else{
         document.getElementById('error-interest').innerHTML = "";
         document.getElementById('interest-field').style.borderColor = 'black';
-
     }
 
     if (emailCheck == true && nama != "" && interest != "default") {
@@ -48,9 +46,6 @@ function validateForm(){
         email = '';
         interest = '';
     }
-    
-    
-
     return false 
 }
 
@@ -75,7 +70,6 @@ function showDivs(n){
         imgList[i].style.display = "none";
     }
     imgList[slideIndex-1].style.display = "block";
-
 }
 
 setInterval(() => {

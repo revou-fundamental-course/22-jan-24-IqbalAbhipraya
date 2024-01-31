@@ -238,6 +238,8 @@ button.change-img-button {
   font-size: 12pt;
 }
 
+/* contact us form */
+
 .contact-us-form {
   background-color: #EEEDEB;
   padding: 10px 10px 10px 10px;
@@ -253,6 +255,11 @@ button.change-img-button {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 40px;
+}
+
+.form-content p {
+  color: red;
+  font-size: small;
 }
 
 .contact-us-form h4,
@@ -291,6 +298,10 @@ button.change-img-button {
   text-align: center;
   width: 100%;
 }
+
+.form-content button:hover{
+  background-color: white;
+}
 .form-content label {
   text-align: start;
 }
@@ -306,6 +317,8 @@ label {
   font-weight: bold;
   font-size: 16px;
 }
+
+/* Our Package */
 
 .our-package-container {
   display: flex;
@@ -383,6 +396,8 @@ label {
   border-radius: 20px;
 }
 
+/* call to action */
+
 .call-to-action {
   display: flex;
   flex-direction: column;
@@ -404,6 +419,8 @@ label {
   width: 100%;
 }
 
+/* Footer */
+
 .footer-container{
   display: flex;
   flex-direction: column;
@@ -413,6 +430,13 @@ label {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   height: 100px;
+  padding: 10px;
+}
+
+.footer-container div {
+  display: flex;
+  gap: 30px;
+  text-align: center;
 }
 
 
@@ -433,20 +457,16 @@ label {
     width: 100%;
     height: auto;
   }
-
 }
 
 @media (min-width: 951px) {
   .hide-hamburg {
     display: none;
   }
-  
 }
 
 @media (max-width: 1441px){
   .main-container{
     gap: 30px;
   }
-
-  
 }
