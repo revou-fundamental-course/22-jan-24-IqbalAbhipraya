@@ -11,7 +11,6 @@ function validateForm(){
     var email = document.forms['contact-us-form']['email-field'].value;
     var interest = document.forms['contact-us-form']['interest-field'].value;
 
-    console.log(nama, email, interest)
 
     if (!nama){
         document.getElementById('error-name').innerHTML = "Please fill in the name field";
