@@ -14,7 +14,7 @@ function validateForm(){
     console.log(nama, email, interest)
 
     if (!nama){
-        document.getElementById('error-name').innerHTML = "Please fill-out the name field";
+        document.getElementById('error-name').innerHTML = "Please fill in the name field";
         document.getElementById('name-field').style.borderColor = 'red';
     }else{
         document.getElementById('error-name').innerHTML = "";
@@ -22,7 +22,7 @@ function validateForm(){
     }
 
     if (email == '' || !(email.includes('@'))){
-        document.getElementById('error-email').innerHTML = "Please fill-out the email field";
+        document.getElementById('error-email').innerHTML = "Please fill in the email field";
         document.getElementById('email-field').style.borderColor = 'red';
         var emailCheck = false;
     }else{
@@ -39,7 +39,7 @@ function validateForm(){
         document.getElementById('interest-field').style.borderColor = 'black';
     }
 
-    if (emailCheck == true && nama != "" && interest != "default") {
+    if (emailCheck == true && nama != "" && interest != "") {
         alert("The data is received, sales person will contact you 1x24 hours")
 
         nama = '';

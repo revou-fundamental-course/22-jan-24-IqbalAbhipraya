@@ -14,13 +14,13 @@
             <li onclick="hideHamburgerMenu()"><a><img src="assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Close"></a></li>
             <li><a href="#banner" onclick="hideHamburgerMenu()">Home</a></li>
             <li><a href="#our-package" onclick="hideHamburgerMenu()">Our Package</a></a></li>
-            <li><a href="#contact-us" onclick="hideHamburgerMenu()">Contact Us</a></li>
+            <li><a href="#closing-arg" onclick="hideHamburgerMenu()">Contact Us</a></li>
         </ul>
-        <ul>
+        <ul class="main-bar">
             <li><img src="assets/logo.png" height="80px" alt="profile picture"></li>
             <li class="hide-nav"><a href="#banner" >Home</a></li>
             <li class="hide-nav"><a href="#our-package" >Our Package</a></a></li>
-            <li class="hide-nav"><a href="#contact-us">Contact Us</a></li>
+            <li class="hide-nav"><a href="#closing-arg">Contact Us</a></li>
             <li onclick="showHamburgerMenu()" class="hide-hamburg"><a><img src="assets/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Sidebar"></a>
             </li>
         </ul>
@@ -61,15 +61,15 @@
             <hr>
             <div class="headline-benefit">
                 <h4><b>Our product is supperior than the other competitors such as that our product is:</b></h4>
-                <ol>
+                <ul>
                     <li><b>Higher quality:</b> We handle our product with care</li>
                     <li><b>Fresh everyday:</b> We deliver our product in the morning fresh from the source</li>
                     <li><b>Trusted:</b> Our services is trusted by many people in Indonesia</li>
-                </ol>
+                </ul>
             </div>
         </div>
 
-        <div class="right-main-content">
+        <div class="right-main-content" id="form">
             <form name="contact-us-form" class="contact-us-form" onsubmit="return validateForm()">
                 <h4>Contact Us</h4>
                 <p>Sales person will contact you 1x24 hours after the data is received</p>
@@ -177,17 +177,17 @@
         </div>
     </section>
 
-    <section class="call-to-action" id="contact-us">
-        <h2>Your Closing Argument Headline</h2>
-        <p>In quis dolor id dolor imperdiet eleifend a eu purus. Vivamus facilisis enim quis justo pellentesque tincidunt. Fusce non volutpat erat. Cras vulputate rutrum neque, ac gravida tellus sagittis at. Ut maximus tempor leo et auctor. Integer quis mauris quis massa dictum varius sed ut urna. Morbi pharetra non sem ac mattis.</p>
+    <section class="call-to-action" id="closing-arg">
+        <h2>Thank you for Visiting Our Website</h2>
+        <p>Contact us if you want to know more about our product and packages by clicking the button below and fill in the form</p>
         <br>
-        <button class="cta-button" id="cta">CALL TO ACTION</button>
+        <a href="#form"><button class="cta-button" id="cta">CALL TO ACTION</button></a>
     </section>
 
     <footer class="footer-container">
         <div><a><i>E-Groceries<sup>+</sup></i></a></div>
         <br>
-        <div><a>Terms of Service</a><a>Privacy Policy</a></div>
+        <div><a href="">Terms of Service</a><a href="">Privacy Policy</a></div>
         <br>
         <div>&copy;2024</div>
     </footer>
